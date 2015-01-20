@@ -176,7 +176,7 @@ msgstr ""
 
 #. notes@lestcape->settings-schema.json->auto-hide-buttonss->description
 msgid "Auto hide buttons."
-msgstr "Auto ocultar botones."
+msgstr "Toggle ocultar botones."
 
 #. notes@lestcape->settings-schema.json->auto-hide-buttons->tooltip
 msgid ""

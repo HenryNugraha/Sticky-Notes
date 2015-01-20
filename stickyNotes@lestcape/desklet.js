@@ -365,10 +365,6 @@ MyDesklet.prototype = {
       this._initDeskletContruction();
       this.setContent(this.mainBox);
 
-      this.entry.visible = false;//This is need to open note without enter on any line.
-      Mainloop.idle_add(Lang.bind(this, function() {
-         this.entry.visible = true;
-      }));
       if(this.initDeskletType()) {
          this.clutterText.connect('button-press-event', Lang.bind(this, this._onButtonPress));
          this.clutterText.connect('button-release-event', Lang.bind(this, this._onButtonRelease));
@@ -1890,12 +1886,20 @@ MyDesklet.prototype = {
    },
 
    _onAutoHideButtons: function(hide) {
+/*
       if(this._autohideButtons) {
          let focusedActor = global.stage.get_key_focus();
          if((focusedActor)&&(this.entry.contains(focusedActor)))
             this.buttonBanner.visible = true;
          else
             this.buttonBanner.visible = hide;
+      } else {
+         this.buttonBanner.visible = true;
+      }
+*/
+      // This will change behaviour from auto hide to toggle hide/show
+      if(this._autohideButtons) {
+         this.buttonBanner.visible = false;
       } else {
          this.buttonBanner.visible = true;
       }

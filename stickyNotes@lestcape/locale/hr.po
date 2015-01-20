@@ -172,8 +172,9 @@ msgid ""
 msgstr "Odaberite ovu mogućnost ako želite svaku zabilješku u novom primjerku."
 
 #. notes@lestcape->settings-schema.json->auto-hide-buttons->description
+# machine translation. sorry!
 msgid "Auto hide buttons."
-msgstr "Automatski sakrij tipke"
+msgstr "Prebaci sakrij tipke"
 
 #. notes@lestcape->settings-schema.json->auto-hide-buttons->tooltip
 msgid ""
